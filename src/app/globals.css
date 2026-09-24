@@ -49,6 +49,14 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+@utility font-poppins {
+  font-family: var(--font-poppins);
+}
+
+@utility font-michroma {
+  font-family: var(--font-michroma);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #17212b;

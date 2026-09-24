@@ -51,7 +51,7 @@ export const processSteps: ProcessStep[] = [
     number: "02",
     title: "Design",
     description:
-      "We create a tailored solution and modern user experience that fits your business.",
+      "We craft a tailored solution and modern UX for your business.",
     icon: "/assets/JADE_Our_Process_SVGs/design.svg",
     alt: "Origami pencil illustration",
     outline: [

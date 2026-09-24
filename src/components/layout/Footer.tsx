@@ -44,15 +44,15 @@ export function Footer() {
                 height={48}
                 className="size-11 object-contain"
               />
-              <span className="text-[28px] font-[--font-michroma] tracking-[-0.02em] leading-none">
+              <span className="text-[28px] font-michroma tracking-[-0.02em] leading-none">
                 PRAXIS
               </span>
-              <span className="text-[28px] font-[--font-michroma] tracking-[-0.02em] text-[#54D7AD] leading-none ml-1">
+              <span className="text-[28px] font-michroma tracking-[-0.02em] text-[#54D7AD] leading-none ml-1">
                 JADE
               </span>
             </Link>
 
-            <p className="mt-3 text-[10px] font-light font-[--font-poppins] uppercase tracking-[0.4em] text-[#6FD9B9]">
+            <p className="mt-3 text-[10px] font-poppins uppercase tracking-[0.4em] text-[#6FD9B9]">
               IDEAS INTO IMPACT
             </p>
             <p className="mt-5 max-w-[52ch] text-sm leading-7 text-[#B8D5CF]">

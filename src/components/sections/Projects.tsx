@@ -69,7 +69,7 @@ export function Projects() {
           <div className="relative w-[106%] sm:w-[110%] lg:w-[112%] lg:ml-[-8%]">
             <Image
               src="/assets/whatwedo/WhatWeDoMockup.png"
-              alt="JADE software showcase featuring a POS dashboard, an eCommerce storefront, and a mobile team dashboard"
+              alt="PRAXIS JADE software showcase featuring a POS dashboard, an eCommerce storefront, and a mobile team dashboard"
               width={1774}
               height={887}
               sizes="(min-width: 1024px) 55vw, 100vw"

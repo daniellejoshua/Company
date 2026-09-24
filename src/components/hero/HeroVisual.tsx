@@ -69,7 +69,7 @@ export function HeroVisual() {
 
       <Image
         src="/assets/hero/DeviceMockup.png"
-        alt="JADE business software dashboard displayed on a laptop and smartphone"
+        alt="PRAXIS JADE business software dashboard displayed on a laptop and smartphone"
         width={1536}
         height={1024}
         priority
