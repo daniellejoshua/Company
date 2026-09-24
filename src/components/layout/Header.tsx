@@ -16,17 +16,20 @@ function Brand() {
     <Link
       href="#home"
       className="flex shrink-0 items-center gap-1.5"
-      aria-label="JADE home"
+      aria-label="PRAXIS JADE home"
     >
       <Image
-        src="/assets/logo/jadeLogo.png"
+        src="/assets/PRAXIS_JADE_symbol_only.svg"
         alt=""
         width={48}
         height={48}
         className="size-9 object-contain sm:size-10"
         priority
       />
-      <span className="text-2xl font-extrabold tracking-[-0.06em] text-[#17212B]">
+      <span className="text-xl font-[--font-michroma] tracking-[-0.02em] text-[#17212B] leading-none">
+        PRAXIS
+      </span>
+      <span className="text-xl font-[--font-michroma] tracking-[-0.02em] text-[#00875A] leading-none ml-1">
         JADE
       </span>
     </Link>

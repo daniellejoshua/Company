@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="460" viewBox="0 0 480 460">
+<defs>
+ <linearGradient id="mint" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#7AE1BC"/><stop offset=".52" stop-color="#2EBD91"/><stop offset="1" stop-color="#0C8969"/></linearGradient>
+ <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#003F38"/><stop offset=".65" stop-color="#005747"/><stop offset="1" stop-color="#087C60"/></linearGradient>
+ <linearGradient id="cap" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07805F"/><stop offset=".5" stop-color="#15A47B"/><stop offset="1" stop-color="#66D5AB"/></linearGradient>
+ <linearGradient id="fold" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#2DBD91"/><stop offset="1" stop-color="#00785D"/></linearGradient>
+</defs>
+<!-- main ascending paper silhouette -->
+<path d="M0 395 330 66 330 52 Q330 0 382 0 H455 V145 Q455 177 430 202 L202 430 171 460 H65Z" fill="url(#mint)"/>
+<!-- light folded front left facet -->
+<path d="M0 395 170 225 170 460 H65Z" fill="#75DFB7" opacity=".82"/>
+<path d="M0 395 84 460 H65Z" fill="#B0F0D9" opacity=".36"/>
+<!-- deep central vertical folded face -->
+<path d="M170 225 330 66 V298 L170 460Z" fill="url(#dark)"/>
+<path d="M170 225 245 151 330 66 330 298 278 351Z" fill="#00483F" opacity=".47"/>
+<!-- top folded cap -->
+<path d="M330 66 V52 Q330 0 382 0 H455 V145 Q455 177 430 202 L330 298Z" fill="url(#cap)"/>
+<path d="M330 66 V52 Q330 0 382 0 H455 V145 L330 298Z" fill="#0A9973" opacity=".19"/>
+<path d="M330 66 382 0 H455 V145Z" fill="#54CAA2" opacity=".12"/>
+<!-- subtle diagonal paper-fold highlight -->
+<path d="M170 225 330 66 V79 L170 241Z" fill="#72DDB6" opacity=".14"/>
+</svg>
