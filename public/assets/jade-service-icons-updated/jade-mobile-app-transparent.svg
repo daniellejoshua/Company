@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="title desc">
+  <title id="title">JADE Mobile Apps — transparent screen</title>
+  <desc id="desc">Faceted emerald smartphone icon with a genuinely transparent screen and home-button cutout.</desc>
+  <defs>
+    <clipPath id="phone"><rect x="15" y="3" width="34" height="58" rx="7"/></clipPath>
+    <mask id="cutouts" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="white"/>
+      <rect x="23" y="13" width="18" height="36" rx="1.7" fill="black"/>
+      <rect x="28" y="54" width="8" height="2.2" rx="1.1" fill="black"/>
+    </mask>
+  </defs>
+  <g mask="url(#cutouts)">
+    <g clip-path="url(#phone)">
+      <rect x="15" y="3" width="34" height="58" fill="#008F68"/>
+      <path d="M15 3H49V28L32 11Z" fill="#16B88A"/>
+      <path d="M32 3H49V28Z" fill="#00352D"/>
+      <path d="M15 39L27 51L15 61Z" fill="#00352D"/>
+      <path d="M49 40V61H28Z" fill="#004D40"/>
+      <path d="M15 61L29 47H49V61Z" fill="#0C9E77"/>
+      <path d="M15 19L23 11H41L49 19V45L41 53H23L15 45Z" fill="#006C52"/>
+      <path d="M23 11H41L49 19L41 11Z" fill="#004D40"/>
+      <path d="M15 45L23 53L15 53Z" fill="#00352D"/>
+    </g>
+  </g>
+</svg>
