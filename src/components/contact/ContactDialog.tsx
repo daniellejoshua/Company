@@ -40,19 +40,19 @@ const LOOKING_FOR_OPTIONS = [
 ];
 
 const inputBase =
-  "h-11 w-full rounded-lg border bg-white px-3.5 text-[13px] text-[#111827] shadow-[0_1px_2px_rgba(15,23,42,0.05)] outline-none transition-colors placeholder:text-[#9AA5B1] focus:border-[#10B981] focus:ring-2 focus:ring-[#10B981]/15";
+  "h-11 w-full rounded-lg border bg-jade-off-white px-3.5 text-[13px] text-jade-black shadow-[0_1px_2px_rgba(12,19,21,0.06)] outline-none transition-colors placeholder:text-jade-gray focus:border-jade-primary focus:ring-2 focus:ring-jade-primary/15";
 
 const inputBorder = (hasError: boolean) =>
   hasError
     ? "border-[#DC2626]/70 focus:border-[#DC2626] focus:ring-[#DC2626]/15"
-    : "border-[#DDE3E8]";
+    : "border-jade-muted/45";
 
-const labelClass = "mb-1.5 block text-[13px] font-medium text-[#334155]";
+const labelClass = "mb-1.5 block text-[13px] font-medium text-jade-charcoal";
 
 const errorTextClass = "mt-1.5 text-xs text-[#DC2626]";
 
 const iconClass =
-  "pointer-events-none absolute top-1/2 left-3.5 size-[17px] -translate-y-1/2 text-[#9AA5B1]";
+  "pointer-events-none absolute top-1/2 left-3.5 size-[17px] -translate-y-1/2 text-jade-gray";
 
 type FormValues = {
   fullName: string;
@@ -101,7 +101,7 @@ function BrandLockup({ compact = false }: { compact?: boolean }) {
   return (
     <div className="flex items-center gap-2.5">
       <Image
-        src="/assets/PRAXIS_JADE_symbol_only.svg"
+        src="/assets/PRAXISJADE(GREEN) ASSETS/praxis-jade-symbol-crystal.svg"
         alt=""
         width={40}
         height={48}
@@ -110,14 +110,14 @@ function BrandLockup({ compact = false }: { compact?: boolean }) {
       <span
         className={`${
           compact ? "text-base" : "text-lg"
-        } font-michroma leading-none tracking-[-0.02em] text-white`}
+        } font-michroma leading-none tracking-[-0.02em] text-jade-off-white`}
       >
         PRAXIS
       </span>
       <span
         className={`${
           compact ? "text-base" : "text-lg"
-        } font-michroma leading-none tracking-[-0.02em] text-[#6EE7B7]`}
+        } font-michroma leading-none tracking-[-0.02em] text-jade-soft`}
       >
         JADE
       </span>
@@ -127,7 +127,7 @@ function BrandLockup({ compact = false }: { compact?: boolean }) {
 
 function BrandTagline() {
   return (
-    <p className="mt-3 text-[10px] font-poppins font-normal uppercase tracking-[0.35em] text-[#6EE7B7]/70">
+    <p className="mt-3 text-[10px] font-poppins font-normal uppercase tracking-[0.35em] text-jade-soft/75">
       Ideas Into Impact
     </p>
   );
@@ -152,7 +152,7 @@ function FormInput({
       <label htmlFor={id} className={labelClass}>
         {label}
         {required ? (
-          <span className="ml-0.5 text-[#10B981]" aria-hidden="true">
+          <span className="ml-0.5 text-jade-fresh" aria-hidden="true">
             *
           </span>
         ) : null}
@@ -198,7 +198,7 @@ function FormSelect({
       <label htmlFor={id} className={labelClass}>
         {label}
         {required ? (
-          <span className="ml-0.5 text-[#10B981]" aria-hidden="true">
+          <span className="ml-0.5 text-jade-fresh" aria-hidden="true">
             *
           </span>
         ) : null}
@@ -211,7 +211,7 @@ function FormSelect({
           onChange={(event) => onChange(event.target.value)}
           aria-invalid={Boolean(error)}
           aria-describedby={error ? `${id}-error` : undefined}
-          className={`${inputBase} ${inputBorder(Boolean(error))} appearance-none pr-9 pl-11 ${value ? "text-[#111827]" : "text-[#9AA5B1]"}`}
+          className={`${inputBase} ${inputBorder(Boolean(error))} appearance-none pr-9 pl-11 ${value ? "text-jade-black" : "text-jade-gray"}`}
         >
           <option value="" disabled>
             Select an option
@@ -223,7 +223,7 @@ function FormSelect({
           ))}
         </select>
         <ChevronDown
-          className="pointer-events-none absolute top-1/2 right-3 size-4 -translate-y-1/2 text-[#9AA5B1]"
+          className="pointer-events-none absolute top-1/2 right-3 size-4 -translate-y-1/2 text-jade-gray"
           aria-hidden="true"
         />
       </div>
@@ -335,7 +335,7 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
       onKeyDown={handleTabTrap}
     >
       <motion.div
-        className="fixed inset-0 bg-[#0F172A]/60 backdrop-blur-[3px]"
+        className="fixed inset-0 bg-jade-black/65 backdrop-blur-[3px]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -367,14 +367,14 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
             type="button"
             onClick={onClose}
             aria-label="Close contact dialog"
-            className="absolute top-4 right-4 z-30 flex size-9 cursor-pointer items-center justify-center rounded-full border border-[#DDE3E8] bg-white text-[#475569] shadow-sm transition-colors duration-200 hover:bg-[#F1F5F9] hover:text-[#111827] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#10B981]"
+            className="absolute top-4 right-4 z-30 flex size-9 cursor-pointer items-center justify-center rounded-full border border-jade-muted/45 bg-jade-off-white text-jade-charcoal shadow-sm transition-colors duration-200 hover:bg-jade-soft/10 hover:text-jade-black focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jade-primary"
           >
             <X className="size-4" aria-hidden="true" />
           </button>
 
-          <div className="grid grid-cols-1 overflow-hidden rounded-[18px] bg-white shadow-[0_32px_80px_rgba(2,24,18,0.45)] ring-1 ring-black/5 md:max-h-[calc(100dvh-3rem)] md:grid-cols-[39%_61%] md:grid-rows-[minmax(0,1fr)]">
+          <div className="grid grid-cols-1 overflow-hidden rounded-[18px] bg-jade-off-white shadow-[0_32px_80px_rgba(12,19,21,0.45)] ring-1 ring-jade-black/5 md:max-h-[calc(100dvh-3rem)] md:grid-cols-[39%_61%] md:grid-rows-[minmax(0,1fr)]">
             {/* Mobile compact branded header */}
-            <div className="relative overflow-hidden bg-[#071D1A] px-5 py-4 md:hidden">
+            <div className="relative overflow-hidden bg-jade-deep px-5 py-4 md:hidden">
               <Image
                 src="/assets/praxis-geometric-panel.svg"
                 alt=""
@@ -382,7 +382,7 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
                 className="pointer-events-none object-cover opacity-60"
                 aria-hidden="true"
               />
-              <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(3,20,16,0.7),transparent_60%)]" aria-hidden="true" />
+              <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(12,19,21,0.72),transparent_60%)]" aria-hidden="true" />
               <div className="relative z-10">
                 <BrandLockup compact />
                 <BrandTagline />
@@ -390,7 +390,7 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
             </div>
 
             {/* Brand panel — desktop */}
-            <aside className="relative hidden min-h-0 overflow-hidden bg-[#071D1A] md:flex md:flex-col">
+            <aside className="relative hidden min-h-0 overflow-hidden bg-jade-deep md:flex md:flex-col">
               <Image
                 src="/assets/praxis-geometric-panel.svg"
                 alt=""
@@ -399,7 +399,11 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
                 aria-hidden="true"
               />
               <div
-                className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_100%_at_82%_100%,rgba(2,18,14,0.8),transparent_55%)]"
+                className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(12,19,21,0.72),transparent_65%)]"
+                aria-hidden="true"
+              />
+              <div
+                className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_100%_at_82%_100%,rgba(12,19,21,0.82),transparent_55%)]"
                 aria-hidden="true"
               />
 
@@ -408,17 +412,17 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
                 <BrandTagline />
 
                 <div className="mt-auto pt-12">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[#6EE7B7]">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-jade-soft">
                     Let&apos;s Talk
                   </p>
-                  <h2 className="mt-3 font-poppins text-[32px] leading-[1.25] font-bold text-white">
+                  <h2 className="mt-3 font-poppins text-[32px] leading-[1.25] font-bold text-jade-off-white">
                     Turn Your Ideas
                     <br />
                     Into Real
                     <br />
-                    <span className="text-[#6EE7B7]">Solutions.</span>
+                    <span className="text-jade-soft">Solutions.</span>
                   </h2>
-                  <p className="mt-4 max-w-[36ch] text-sm leading-[1.6] text-white/75">
+                  <p className="mt-4 max-w-[36ch] text-sm leading-[1.6] text-jade-off-white/75">
                     Have a project in mind or just want to explore
                     possibilities? We&apos;d love to hear from you.
                   </p>
@@ -427,29 +431,29 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
             </aside>
 
             {/* Contact form — desktop + mobile */}
-            <div className="min-w-0 bg-white p-5 sm:p-8 md:min-h-0 md:max-h-[inherit] md:overflow-y-auto lg:p-10">
+            <div className="min-w-0 bg-jade-off-white p-5 sm:p-8 md:min-h-0 md:max-h-[inherit] md:overflow-y-auto lg:p-10">
               {status === "success" ? (
                 <div className="flex h-full min-h-[420px] flex-col items-center justify-center py-10 text-center">
-                  <span className="flex size-14 items-center justify-center rounded-full bg-[#D1FAE5]/70">
+                  <span className="flex size-14 items-center justify-center rounded-full bg-jade-soft/15">
                     <CheckCircle2
-                      className="size-8 text-[#10B981]"
+                      className="size-8 text-jade-primary"
                       aria-hidden="true"
                     />
                   </span>
                   <h3
                     id="contact-dialog-title"
-                    className="mt-5 font-poppins text-2xl font-semibold text-[#111827]"
+                    className="mt-5 font-poppins text-2xl font-semibold text-jade-black"
                   >
                     Message Sent!
                   </h3>
-                  <p className="mt-2 max-w-sm text-sm leading-[1.6] text-[#6B7280]">
+                  <p className="mt-2 max-w-sm text-sm leading-[1.6] text-jade-charcoal">
                     Thank you for reaching out — we&apos;ve received your
                     inquiry and will get back to you as soon as possible.
                   </p>
                   <button
                     type="button"
                     onClick={onClose}
-                    className="mt-7 h-[46px] cursor-pointer rounded-lg bg-gradient-to-r from-[#064E3B] to-[#059669] px-7 text-sm font-semibold text-white transition-all duration-200 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#10B981]"
+                    className="mt-7 h-[46px] cursor-pointer rounded-lg bg-gradient-to-r from-jade-dark to-jade-primary px-7 text-sm font-semibold text-jade-off-white transition-all duration-200 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jade-fresh"
                   >
                     Back to Site
                   </button>
@@ -459,11 +463,11 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
                   <header>
                     <h2
                       id="contact-dialog-title"
-                      className="font-poppins text-[30px] leading-[1.2] font-bold tracking-[-0.01em] text-[#111827]"
+                      className="font-poppins text-[30px] leading-[1.2] font-bold tracking-[-0.01em] text-jade-black"
                     >
                       Send Us a Message
                     </h2>
-                    <p className="mt-2 text-sm leading-[1.6] text-[#6B7280]">
+                    <p className="mt-2 text-sm leading-[1.6] text-jade-charcoal">
                       Fill out the form and we&apos;ll get back to you as soon
                       as possible.
                     </p>
@@ -543,13 +547,13 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
                     <div className="sm:col-span-2">
                       <label htmlFor="contact-details" className={labelClass}>
                         Project Details
-                        <span className="ml-0.5 text-[#10B981]" aria-hidden="true">
+                        <span className="ml-0.5 text-jade-fresh" aria-hidden="true">
                           *
                         </span>
                       </label>
                       <div className="relative">
                         <FileText
-                          className="pointer-events-none absolute top-3.5 left-3.5 size-[17px] text-[#9AA5B1]"
+                          className="pointer-events-none absolute top-3.5 left-3.5 size-[17px] text-jade-gray"
                           aria-hidden="true"
                         />
                         <textarea
@@ -578,7 +582,7 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
                         ) : (
                           <span aria-hidden="true" />
                         )}
-                        <span className="ml-auto shrink-0 text-xs text-[#9AA5B1]">
+                        <span className="ml-auto shrink-0 text-xs text-jade-gray">
                           {values.details.length}/500
                         </span>
                       </div>
@@ -601,7 +605,7 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
                       <button
                         type="submit"
                         disabled={status === "submitting"}
-                        className="group flex h-[46px] w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#064E3B] to-[#059669] text-sm font-semibold text-white transition-all duration-200 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#10B981] disabled:cursor-not-allowed disabled:opacity-80"
+                        className="group flex h-[46px] w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-jade-dark to-jade-primary text-sm font-semibold text-jade-off-white transition-all duration-200 hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jade-fresh disabled:cursor-not-allowed disabled:opacity-80"
                       >
                         {status === "submitting" ? (
                           <>
@@ -621,9 +625,9 @@ function DialogPanel({ onClose }: { onClose: () => void }) {
                           </>
                         )}
                       </button>
-                      <p className="mt-3 flex items-center justify-center gap-1.5 text-center text-xs text-[#6B7280]">
+                      <p className="mt-3 flex items-center justify-center gap-1.5 text-center text-xs text-jade-charcoal">
                         <Lock
-                          className="size-3.5 shrink-0 text-[#10B981]"
+                          className="size-3.5 shrink-0 text-jade-primary"
                           aria-hidden="true"
                         />
                         Your information is secure and will only be used for

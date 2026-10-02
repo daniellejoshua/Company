@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254" fill="none"><defs>
+    <linearGradient id="ribbon" x1="150" y1="1130" x2="950" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1315" /><stop offset=".3" stop-color="#152E27" /><stop offset=".6" stop-color="#07513F" /><stop offset=".82" stop-color="#07513F" /><stop offset="1" stop-color="#152E27" />
+    </linearGradient>
+    <linearGradient id="jade" x1="440" y1="220" x2="1040" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9EB4AD" /><stop offset=".14" stop-color="#50A687" /><stop offset=".36" stop-color="#18A77B" /><stop offset=".58" stop-color="#107D58" /><stop offset=".8" stop-color="#07513F" /><stop offset="1" stop-color="#152E27" />
+    </linearGradient>
+    <linearGradient id="fold" x1="695" y1="375" x2="1080" y2="625" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50A687" /><stop offset=".5" stop-color="#18A77B" /><stop offset="1" stop-color="#107D58" />
+    </linearGradient>
+    <linearGradient id="dot" x1="665" y1="505" x2="860" y2="725" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9EB4AD" /><stop offset=".28" stop-color="#50A687" /><stop offset=".68" stop-color="#18A77B" /><stop offset="1" stop-color="#107D58" />
+    </linearGradient>
+    <linearGradient id="crystalSheen" x1="430" y1="220" x2="985" y2="745" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAFBFA" stop-opacity=".56" /><stop offset=".44" stop-color="#50A687" stop-opacity=".3" /><stop offset="1" stop-color="#18A77B" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="crystalDepth" x1="580" y1="550" x2="1030" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1315" stop-opacity="0" /><stop offset="1" stop-color="#0C1315" stop-opacity=".4" />
+    </linearGradient>
+    <clipPath id="pClip"><use href="#p-body" /></clipPath>
+    <clipPath id="dotClip"><use href="#p-dot" /></clipPath>
+  </defs>
+  <path id="p-body" d="M384 1086V615C384 374 582 178 823 178H1077V482C1077 625 991 742 848 795C913 734 948 672 948 604C948 496 863 414 757 414C651 414 568 496 568 604V916Z" fill="url(#jade)" />
+  <path d="M646 449C761 354 950 320 1077 178V482C1077 625 991 742 848 795C913 734 948 672 948 604C948 496 863 414 757 414C715 414 678 427 646 449Z" fill="url(#fold)" opacity=".4" />
+  <circle id="p-dot" cx="757" cy="613" r="115" fill="url(#dot)" />
+  <g clip-path="url(#pClip)" pointer-events="none">
+    <path d="M338 570 742 152H1018L568 578Z" fill="url(#crystalSheen)" />
+    <path d="M520 592 1077 178V390L650 706Z" fill="#50A687" opacity=".24" />
+    <path d="M568 668 1050 390 930 814 568 1016Z" fill="url(#crystalDepth)" />
+    <path d="M384 612 568 496V760L384 950Z" fill="#50A687" opacity=".2" />
+    <path d="M384 900 568 760V916L384 1086Z" fill="#0C1315" opacity=".24" />
+    <path d="M384 615 568 494 694 404 568 690 384 790Z" fill="#9EB4AD" opacity=".14" />
+    <path d="M676 420 1077 178 925 474 760 548Z" fill="#FAFBFA" opacity=".12" />
+    <path d="M404 586C426 362 606 204 824 204H1032" fill="none" stroke="#FAFBFA" stroke-width="7" stroke-linecap="round" opacity=".22" />
+    <path d="m592 518 454-312" fill="none" stroke="#9EB4AD" stroke-width="5" stroke-linecap="round" opacity=".38" />
+  </g>
+  <g clip-path="url(#dotClip)" pointer-events="none">
+    <path d="m622 568 150-88 116 92-194 122Z" fill="#FAFBFA" opacity=".3" />
+    <path d="m700 646 182-88-34 180-170 8Z" fill="#07513F" opacity=".27" />
+    <path d="M656 545c36-50 110-71 172-42" fill="none" stroke="#FAFBFA" stroke-width="6" stroke-linecap="round" opacity=".32" />
+  </g>
+</svg>

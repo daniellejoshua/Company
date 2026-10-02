@@ -29,6 +29,12 @@ export const metadata: Metadata = {
   title: "PRAXIS JADE | Custom Software Solutions",
   description:
     "PRAXIS JADE designs and develops custom business systems, mobile apps, desktop apps, and web applications.",
+  icons: {
+    icon: {
+      url: "/assets/PRAXISJADE(GREEN) ASSETS/praxis-jade-symbol-crystal.svg",
+      type: "image/svg+xml",
+    },
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -45,18 +51,21 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             if (!isReload) return;
             if ("scrollRestoration" in history) history.scrollRestoration = "manual";
             if (location.hash) history.replaceState(null, "", location.pathname + location.search);
-            const root = document.documentElement;
-            const previousScrollBehavior = root.style.scrollBehavior;
-            root.style.scrollBehavior = "auto";
-            const reset = () => scrollTo(0, 0);
-            reset();
-            addEventListener("pageshow", () => {
+            const reset = () => scrollTo({ top: 0, left: 0, behavior: "instant" });
+            const finishReset = () => {
               reset();
               requestAnimationFrame(() => {
-                root.style.scrollBehavior = previousScrollBehavior;
-                history.scrollRestoration = "auto";
+                reset();
+                setTimeout(() => {
+                  reset();
+                  history.scrollRestoration = "auto";
+                }, 100);
               });
-            }, { once: true });
+            };
+            reset();
+            addEventListener("pageshow", finishReset, { once: true });
+            addEventListener("load", finishReset, { once: true });
+            if (document.readyState === "complete") finishReset();
           })();`}
         </Script>
         {children}

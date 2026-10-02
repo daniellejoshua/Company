@@ -1,6 +1,6 @@
 export function HeroAnnotation() {
   return (
-    <div className="hero-annotation hero-reveal hero-delay-2 absolute top-[2%] right-0 z-20 hidden rotate-[7deg] text-[#334155]">
+    <div className="hero-annotation hero-reveal hero-delay-2 absolute top-[2%] right-0 z-20 hidden rotate-[7deg] text-jade-charcoal">
       <p className="hero-annotation-copy font-handwritten text-[24px] leading-[1.05] font-medium">
         Software
         <br />

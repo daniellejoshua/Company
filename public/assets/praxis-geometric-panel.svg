@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 900" fill="none" role="img" aria-label="Dark emerald geometric contact panel with lower ribbon motif" preserveAspectRatio="xMidYMid slice">
 <defs>
- <linearGradient id="bg" x1="35" y1="0" x2="525" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#061916"/><stop offset=".58" stop-color="#05261F"/><stop offset="1" stop-color="#043B2C"/></linearGradient>
- <linearGradient id="ribbon" x1="25" y1="900" x2="490" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#08694F"/><stop offset=".48" stop-color="#13A77B"/><stop offset="1" stop-color="#9EF4CE"/></linearGradient>
- <linearGradient id="front" x1="200" y1="900" x2="540" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#064434"/><stop offset=".55" stop-color="#0B8964"/><stop offset="1" stop-color="#71E7B6"/></linearGradient>
- <linearGradient id="shadow" x1="195" y1="510" x2="480" y2="785" gradientUnits="userSpaceOnUse"><stop stop-color="#001814" stop-opacity=".05"/><stop offset="1" stop-color="#001814" stop-opacity=".7"/></linearGradient>
+ <linearGradient id="bg" x1="35" y1="0" x2="525" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#0C1315"/><stop offset=".58" stop-color="#152E27"/><stop offset="1" stop-color="#07513F"/></linearGradient>
+ <linearGradient id="ribbon" x1="25" y1="900" x2="490" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#107D58"/><stop offset=".48" stop-color="#18A77B"/><stop offset="1" stop-color="#9EB4AD"/></linearGradient>
+ <linearGradient id="front" x1="200" y1="900" x2="540" y2="610" gradientUnits="userSpaceOnUse"><stop stop-color="#07513F"/><stop offset=".55" stop-color="#18A77B"/><stop offset="1" stop-color="#50A687"/></linearGradient>
+ <linearGradient id="shadow" x1="195" y1="510" x2="480" y2="785" gradientUnits="userSpaceOnUse"><stop stop-color="#0C1315" stop-opacity=".05"/><stop offset="1" stop-color="#0C1315" stop-opacity=".7"/></linearGradient>
  <clipPath id="crop"><rect width="540" height="900"/></clipPath>
 </defs>
 <g clip-path="url(#crop)">
 <rect width="540" height="900" fill="url(#bg)"/>
-<path d="M300 0 0 300V0H300Z" fill="#124638" opacity=".11"/>
-<path d="M540 0 315 225H540Z" fill="#0C6049" opacity=".14"/>
-<path d="M540 330 300 570 182 452 422 212Z" fill="#0B4638" opacity=".22"/>
+<path d="M300 0 0 300V0H300Z" fill="#07513F" opacity=".11"/>
+<path d="M540 0 315 225H540Z" fill="#107D58" opacity=".14"/>
+<path d="M540 330 300 570 182 452 422 212Z" fill="#07513F" opacity=".22"/>
 <path d="M0 730 243 487C267 463 284 456 321 456H540V627L267 900H0Z" fill="url(#shadow)" opacity=".62"/>
 <path d="M-70 875 264 541C287 518 309 507 345 507H540V651L291 900H-70Z" fill="url(#ribbon)"/>
-<path d="M-70 875 264 541C287 518 309 507 345 507H540" stroke="#C1FFE4" stroke-width="1.2" opacity=".78"/>
+<path d="M-70 875 264 541C287 518 309 507 345 507H540" stroke="#9EB4AD" stroke-width="1.2" opacity=".78"/>
 <path d="M243 900 540 603V793L433 900Z" fill="url(#front)"/>
-<path d="M-35 900 220 645V900Z" fill="#034235" opacity=".92"/>
-<path d="M243 900 540 603" stroke="#C1FFE4" stroke-width=".9" opacity=".5"/>
-<path d="M0 735 540 195M0 885 540 345M125 900 540 485" stroke="#75EBC0" stroke-width=".75" opacity=".17"/>
-<path d="M0 480 540 480M0 640 540 640M150 0V900M360 0V900" stroke="#8FF4CE" stroke-width=".6" opacity=".055"/>
+<path d="M-35 900 220 645V900Z" fill="#07513F" opacity=".92"/>
+<path d="M243 900 540 603" stroke="#9EB4AD" stroke-width=".9" opacity=".5"/>
+<path d="M0 735 540 195M0 885 540 345M125 900 540 485" stroke="#50A687" stroke-width=".75" opacity=".17"/>
+<path d="M0 480 540 480M0 640 540 640M150 0V900M360 0V900" stroke="#9EB4AD" stroke-width=".6" opacity=".055"/>
 </g>
 </svg>

@@ -12,8 +12,8 @@
       x2="1"
       y2="1"
     >
-      <stop offset="0%" stop-color="#16B88A"/>
-      <stop offset="100%" stop-color="#004D40"/>
+      <stop offset="0%" stop-color="#18A77B"/>
+      <stop offset="100%" stop-color="#07513F"/>
     </linearGradient>
   </defs>
 
@@ -40,7 +40,7 @@
       C390 265 340 300 270 300
       Z
     "
-    fill="#004D40"
+    fill="#07513F"
     opacity="0.75"
   />
 
@@ -52,7 +52,7 @@
       V300
       Z
     "
-    fill="#008F68"
+    fill="#107D58"
   />
 
   <path
@@ -63,7 +63,7 @@
       L450 300
       Z
     "
-    fill="#004D40"
+    fill="#07513F"
     opacity="0.45"
   />
 
@@ -75,6 +75,6 @@
       C340 440 390 390 390 300
       Z
     "
-    fill="#008F68"
+    fill="#107D58"
   />
 </svg>

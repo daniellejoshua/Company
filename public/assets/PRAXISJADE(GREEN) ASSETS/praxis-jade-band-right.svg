@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254" fill="none"><defs>
+    <linearGradient id="ribbon" x1="150" y1="1130" x2="950" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1315" /><stop offset=".3" stop-color="#152E27" /><stop offset=".6" stop-color="#07513F" /><stop offset=".82" stop-color="#07513F" /><stop offset="1" stop-color="#152E27" />
+    </linearGradient>
+    <linearGradient id="jade" x1="440" y1="220" x2="1040" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9EB4AD" /><stop offset=".18" stop-color="#50A687" /><stop offset=".38" stop-color="#50A687" /><stop offset=".62" stop-color="#18A77B" /><stop offset=".82" stop-color="#107D58" /><stop offset="1" stop-color="#07513F" />
+    </linearGradient>
+    <linearGradient id="fold" x1="695" y1="375" x2="1080" y2="625" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#107D58" /><stop offset="1" stop-color="#18A77B" />
+    </linearGradient>
+    <linearGradient id="dot" x1="665" y1="505" x2="860" y2="725" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#50A687" /><stop offset="1" stop-color="#18A77B" />
+    </linearGradient>
+  </defs>
+  <path d="M335 1254 1254 365V730L710 1254Z" fill="url(#ribbon)" />
+  </svg>

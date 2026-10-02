@@ -59,7 +59,7 @@ function ProjectCta({ className = "" }: { className?: string }) {
   return (
     <Link
       href="#contact"
-      className={`h-12 items-center gap-2 rounded-full bg-gradient-to-r from-[#002F2B] to-[#008F68] px-6 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(0,77,64,0.16)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_34px_rgba(0,77,64,0.22)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#008F68] ${className}`}
+      className={`h-12 items-center gap-2 rounded-full bg-gradient-to-r from-jade-deep to-jade-primary px-6 text-sm font-semibold text-jade-off-white shadow-[0_10px_28px_rgba(21,46,39,0.18)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_34px_rgba(21,46,39,0.24)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jade-fresh ${className}`}
     >
       Start Your Project
       <ArrowRight className="size-4" aria-hidden="true" />
@@ -73,9 +73,9 @@ function ProcessCtas({ className = "" }: { className?: string }) {
       <ProjectCta className="inline-flex" />
       <Link
         href="#process-flow"
-        className="group inline-flex h-12 items-center gap-3 rounded-full text-sm font-medium text-[#145C50] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#00875A]"
+        className="group inline-flex h-12 items-center gap-3 rounded-full text-sm font-medium text-jade-dark focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-jade-primary"
       >
-        <span className="flex size-11 items-center justify-center rounded-full bg-[#EAF8F3] text-[#00875A] transition-transform duration-200 group-hover:scale-105">
+        <span className="flex size-11 items-center justify-center rounded-full bg-jade-soft/10 text-jade-primary transition-transform duration-200 group-hover:scale-105">
           <Play
             className="ml-0.5 size-4 fill-current"
             strokeWidth={1.6}
@@ -106,14 +106,14 @@ function BenefitRow({
       transition={{ duration: 0.4, delay: 0.08 + index * 0.07, ease: EASE }}
       className="flex items-center gap-3"
     >
-      <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#E8F8F2] text-[#00875A]">
+      <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-jade-soft/10 text-jade-primary">
         <Icon className="size-[18px]" strokeWidth={2} aria-hidden="true" />
       </span>
       <span className="min-w-0">
-        <span className="block text-[15px] leading-tight font-semibold text-[#111827]">
+        <span className="block text-[15px] leading-tight font-semibold text-jade-black">
           {benefit.title}
         </span>
-        <span className="mt-1 block text-[13px] leading-snug text-[#667085]">
+        <span className="mt-1 block text-[13px] leading-snug text-jade-charcoal">
           {benefit.description}
         </span>
       </span>
@@ -130,19 +130,19 @@ function ProcessIntro({ reduce }: { reduce: boolean | null }) {
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.5, ease: EASE }}
       >
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#00875A]">
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-jade-primary">
           Our Process
         </p>
         <h2
           id="process-heading"
-          className="mt-3 text-[clamp(2.375rem,3.5vw,3.5rem)] leading-[1.06] font-extrabold tracking-[-0.035em] text-[#111827]"
+          className="mt-3 text-[clamp(2.375rem,3.5vw,3.5rem)] leading-[1.06] font-extrabold tracking-[-0.035em] text-jade-black"
         >
           <span className="block">From Your Idea</span>
           <span className="block">
-            to <span className="text-[#00875A]">Reality.</span>
+            to <span className="text-jade-primary">Reality.</span>
           </span>
         </h2>
-        <p className="mt-4 hidden max-w-md text-[15px] leading-relaxed text-[#667085] sm:block sm:text-base">
+        <p className="mt-4 hidden max-w-md text-[15px] leading-relaxed text-jade-charcoal sm:block sm:text-base">
           We make software development easy,
           <span className="sm:block"> with a clear process from start to finish.</span>
         </p>
@@ -179,9 +179,9 @@ function ProcessIntro({ reduce }: { reduce: boolean | null }) {
 function FeaturePill({ feature }: { feature: ProcessFeature }) {
   const Icon = feature.icon;
   return (
-    <li className="flex h-7 items-center gap-1.5 rounded-[9px] bg-[#EFFAF6] px-2.5 text-[#003F35]">
+    <li className="flex h-7 items-center gap-1.5 rounded-[9px] bg-jade-soft/10 px-2.5 text-jade-dark">
       <Icon
-        className="size-3.5 shrink-0 text-[#00875A]"
+        className="size-3.5 shrink-0 text-jade-primary"
         strokeWidth={2}
         aria-hidden="true"
       />
@@ -261,12 +261,12 @@ function ProcessStage({
                   : { opacity: 0, scale: 1 }
             }
             transition={{ duration: 0.5, delay, ease: EASE }}
-            className="pointer-events-none absolute inset-0 [filter:drop-shadow(0_12px_16px_rgba(0,87,74,0.16))]"
+            className="pointer-events-none absolute inset-0 [filter:drop-shadow(0_12px_16px_rgba(21,46,39,0.16))]"
           >
             <svg viewBox="0 0 160 160" className="absolute inset-0 h-full w-full">
-              <path d="M22 66 L124 13 L126 116 L30 156 Z" fill="#E1F8F0" opacity="0.92" />
-              <path d="M38 80 L136 27 L140 120 L52 148 Z" fill="#CDEFE2" opacity="0.68" />
-              <path d="M66 118 L144 58 L130 132 L78 148 Z" fill="#AFE8D6" opacity="0.52" />
+              <path d="M22 66 L124 13 L126 116 L30 156 Z" fill="#9EB4AD" opacity="0.28" />
+              <path d="M38 80 L136 27 L140 120 L52 148 Z" fill="#50A687" opacity="0.22" />
+              <path d="M66 118 L144 58 L130 132 L78 148 Z" fill="#18A77B" opacity="0.14" />
             </svg>
           </motion.div>
 
@@ -306,11 +306,11 @@ function ProcessStage({
             <svg
               viewBox="0 0 160 160"
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 h-full w-full drop-shadow-[0_2px_5px_rgba(0,87,74,0.22)]"
+              className="pointer-events-none absolute inset-0 h-full w-full drop-shadow-[0_2px_5px_rgba(21,46,39,0.22)]"
             >
               <g
                 fill="none"
-                stroke="#00875A"
+                stroke="#107D58"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               >
@@ -362,19 +362,19 @@ function ProcessStage({
         transition={{ duration: reduce ? 0 : 0.5, delay: reduce ? 0 : delay, ease: EASE }}
         className="relative z-10 min-w-0 pt-0.5"
       >
-        <span className="block text-[32px] leading-[0.9] font-semibold tracking-tight text-[#D9F1E9] lg:text-[clamp(30px,3.8vh,36px)]">
+        <span className="block text-[32px] leading-[0.9] font-semibold tracking-tight text-jade-soft/25 lg:text-[clamp(30px,3.8vh,36px)]">
           {step.number}
         </span>
-        <h3 className="mt-1 text-[19px] leading-tight font-bold tracking-tight text-[#111827] lg:text-[clamp(19px,2.2vh,22px)]">
+        <h3 className="mt-1 text-[19px] leading-tight font-bold tracking-tight text-jade-black lg:text-[clamp(19px,2.2vh,22px)]">
           {step.title}
         </h3>
-        <p className="mt-1 max-w-xl text-[13px] leading-[1.45] text-[#667085] lg:text-[clamp(12.5px,1.5vh,14px)]">
+        <p className="mt-1 max-w-xl text-[13px] leading-[1.45] text-jade-charcoal lg:text-[clamp(12.5px,1.5vh,14px)]">
           {step.description}
         </p>
         <ul
           role="list"
           aria-label={`${step.title} features`}
-          className="mt-2 flex flex-wrap gap-1.5 lg:flex-nowrap"
+          className="mt-2 flex flex-wrap gap-1.5 xl:flex-nowrap"
         >
           {step.features.map((feature) => (
             <FeaturePill key={feature.label} feature={feature} />
@@ -456,7 +456,7 @@ function ProcessTimeline({ reduce }: { reduce: boolean | null }) {
           <path
             d={layout.path}
             fill="none"
-            stroke="#BFE9D8"
+            stroke="#9EB4AD"
             strokeWidth="1.5"
             strokeLinecap="round"
             opacity="0.8"
@@ -466,7 +466,7 @@ function ProcessTimeline({ reduce }: { reduce: boolean | null }) {
               <motion.path
                 d={segment}
                 fill="none"
-                stroke="#00875A"
+                stroke="#107D58"
                 strokeWidth="8"
                 strokeLinecap="round"
                 strokeOpacity="0.14"
@@ -481,7 +481,7 @@ function ProcessTimeline({ reduce }: { reduce: boolean | null }) {
               <motion.path
                 d={segment}
                 fill="none"
-                stroke="#00875A"
+                stroke="#107D58"
                 strokeWidth="2"
                 strokeLinecap="round"
                 initial={reduce ? false : { pathLength: 0 }}
@@ -498,7 +498,7 @@ function ProcessTimeline({ reduce }: { reduce: boolean | null }) {
             <>
               <motion.circle
                 r="5.5"
-                fill="#00875A"
+                fill="#107D58"
                 opacity="0.18"
                 style={{
                   offsetPath: `path("${layout.path}")`,
@@ -509,7 +509,7 @@ function ProcessTimeline({ reduce }: { reduce: boolean | null }) {
               />
               <motion.circle
                 r="2.2"
-                fill="#10B981"
+                fill="#18A77B"
                 style={{
                   offsetPath: `path("${layout.path}")`,
                 }}
@@ -545,22 +545,22 @@ export function Process() {
     <section
       id="solutions"
       aria-labelledby="process-heading"
-      className="relative isolate bg-white lg:h-[calc(100svh-72px)] lg:min-h-[696px]"
+      className="relative isolate bg-jade-off-white"
     >
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-0"
       >
-        <span className="absolute top-0 left-0 h-28 w-44 bg-[#BDEBDB] opacity-[0.16] [clip-path:polygon(0_0,100%_0,55%_55%,0_100%)]" />
-        <span className="absolute top-0 left-8 h-20 w-40 bg-[#D9F5EC] opacity-20 [clip-path:polygon(25%_0,100%_0,100%_55%,50%_100%,0_55%)]" />
-        <span className="absolute bottom-0 left-0 h-48 w-60 bg-[#BDEBDB] opacity-[0.12] [clip-path:polygon(0_0,100%_100%,0_100%)]" />
-        <span className="absolute bottom-0 left-0 h-28 w-80 bg-[#D9F5EC] opacity-[0.16] [clip-path:polygon(0_10%,100%_100%,0_100%)]" />
+        <span className="absolute top-0 left-0 h-28 w-44 bg-jade-soft opacity-[0.1] [clip-path:polygon(0_0,100%_0,55%_55%,0_100%)]" />
+        <span className="absolute top-0 left-8 h-20 w-40 bg-jade-muted opacity-[0.12] [clip-path:polygon(25%_0,100%_0,100%_55%,50%_100%,0_55%)]" />
+        <span className="absolute bottom-0 left-0 h-48 w-60 bg-jade-soft opacity-[0.08] [clip-path:polygon(0_0,100%_100%,0_100%)]" />
+        <span className="absolute bottom-0 left-0 h-28 w-80 bg-jade-muted opacity-[0.1] [clip-path:polygon(0_10%,100%_100%,0_100%)]" />
       </div>
 
-      <div className="relative z-10 mx-auto grid w-full max-w-[1520px] gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:h-full lg:grid-cols-[minmax(0,42fr)_minmax(0,58fr)] lg:items-center lg:gap-[clamp(28px,4vw,56px)] lg:px-12 lg:py-[clamp(24px,4vh,48px)]">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1520px] gap-12 px-5 sm:px-8 lg:grid-cols-[minmax(0,42fr)_minmax(0,58fr)] lg:items-start lg:gap-[clamp(28px,4vw,56px)] lg:px-12">
         <ProcessIntro reduce={reduce} />
 
-        <div className="min-w-0 lg:border-l lg:border-[#E5EDEB] lg:pl-[clamp(28px,3vw,48px)]">
+        <div className="min-w-0 lg:border-l lg:border-jade-muted/30 lg:pl-[clamp(28px,3vw,48px)]">
           <ProcessTimeline reduce={reduce} />
           <motion.div
             initial={reduce ? false : { opacity: 0, y: 10 }}

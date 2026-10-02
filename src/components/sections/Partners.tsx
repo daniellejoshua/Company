@@ -26,13 +26,13 @@ function PartnerLogo({
       className="max-h-12 w-auto max-w-[140px] object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
     />
   ) : (
-    <span className="max-w-[150px] text-center text-xs leading-4 font-semibold text-[#334155] sm:text-sm">
+    <span className="max-w-[150px] text-center text-xs leading-4 font-semibold text-jade-charcoal sm:text-sm">
       {partner.name}
     </span>
   );
 
   const className =
-    "group flex h-12 items-center justify-center opacity-70 transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#008F68]";
+    "group flex h-12 items-center justify-center opacity-70 transition-opacity duration-300 hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-jade-primary";
 
   return partner.url && !duplicate ? (
     <Link href={partner.url} className={className} aria-label={partner.name}>
@@ -85,17 +85,17 @@ export function Partners() {
   return (
     <section
       aria-labelledby="partners-heading"
-      className="bg-[#F2FAF7] py-6 sm:py-7"
+      className="bg-jade-soft/10"
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+      <div className="mx-auto max-w-7xl px-5 pt-5 pb-5 sm:px-8 sm:pt-6 sm:pb-6">
         <div className="text-center">
           <h2
             id="partners-heading"
-            className="text-xs font-bold tracking-[0.12em] text-[#004D40] uppercase"
+            className="text-xs font-bold tracking-[0.12em] text-jade-dark uppercase"
           >
             Trusted by businesses like yours
           </h2>
-          <p className="mt-2 text-[13px] text-[#64748B]">
+          <p className="mt-2 text-[13px] text-jade-charcoal">
             We partner with businesses across different industries.
           </p>
         </div>

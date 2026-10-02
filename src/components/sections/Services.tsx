@@ -23,7 +23,7 @@ export function Services() {
     <section
       id="services"
       aria-labelledby="services-heading"
-      className="bg-white pt-16 pb-8 sm:pt-20 sm:pb-10 lg:pt-24"
+      className="bg-jade-off-white"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="flex flex-col gap-8 md:flex-row md:items-end md:gap-12 lg:gap-16">
@@ -31,27 +31,27 @@ export function Services() {
             {...fade(reduce)}
             className="md:max-w-[620px]"
           >
-            <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#00875A]">
+            <p className="text-xs font-bold uppercase tracking-[0.12em] text-jade-primary">
               What We Do
             </p>
             <h2
               id="services-heading"
-              className="mt-4 text-[clamp(2.1rem,3.8vw,3.4rem)] leading-[1.1] font-extrabold tracking-[-0.03em] text-[#111827]"
+              className="mt-4 text-[clamp(2.1rem,3.8vw,3.4rem)] leading-[1.1] font-extrabold tracking-[-0.03em] text-jade-black"
             >
               All the Software You Need, Built{" "}
-              <span className="text-[#00875A]">Your Way.</span>
+              <span className="text-jade-primary">Your Way.</span>
             </h2>
           </motion.div>
 
           <motion.span
             {...fade(reduce, 0.05)}
             aria-hidden="true"
-            className="hidden h-28 w-px shrink-0 bg-gradient-to-b from-[#00875A] via-[#00875A]/30 to-transparent md:block"
+            className="hidden h-28 w-px shrink-0 bg-gradient-to-b from-jade-primary via-jade-primary/30 to-transparent md:block"
           />
 
           <motion.p
             {...fade(reduce, 0.1)}
-            className="max-w-md text-base leading-relaxed text-[#667085] lg:text-lg"
+            className="max-w-md text-base leading-relaxed text-jade-charcoal lg:text-lg"
           >
             From idea to launch, we create customized software solutions that
             fit your business goals — no limitations, just possibilities.
@@ -59,7 +59,7 @@ export function Services() {
         </div>
 
         <ul
-          className="mt-16 grid grid-cols-2 gap-x-4 gap-y-12 sm:grid-cols-3 sm:gap-x-6 lg:mt-20 lg:grid-cols-7"
+          className="mt-12 grid grid-cols-2 gap-x-4 gap-y-12 sm:grid-cols-3 sm:gap-x-6 lg:mt-14 lg:grid-cols-7"
           role="list"
           aria-label="Software services"
         >
@@ -79,10 +79,10 @@ export function Services() {
                     className="size-[72px] object-contain"
                   />
                 </div>
-                <h3 className="mt-5 text-sm font-semibold tracking-tight text-[#111827] sm:text-[15px]">
+                <h3 className="mt-5 text-sm font-semibold tracking-tight text-jade-black sm:text-[15px]">
                   {service.name}
                 </h3>
-                <p className="mt-2 max-w-[150px] text-xs leading-relaxed text-[#667085]">
+                <p className="mt-2 max-w-[150px] text-xs leading-relaxed text-jade-charcoal">
                   {service.description}
                 </p>
               </div>

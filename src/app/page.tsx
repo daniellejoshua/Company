@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="flex flex-col gap-[var(--section-gap)]">
         <Hero />
         <Partners />
         <Services />
