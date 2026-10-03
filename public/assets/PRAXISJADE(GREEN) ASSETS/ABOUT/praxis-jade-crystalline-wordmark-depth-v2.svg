@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 320" role="img" aria-labelledby="t d">
+<title id="t">JADE crystalline wordmark</title>
+<desc id="d">Fully vector faceted jade wordmark with glass lighting and internal fog.</desc>
+<defs>
+  <linearGradient id="jade" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#BFF6E5"/><stop offset=".22" stop-color="#55D2AE"/>
+    <stop offset=".55" stop-color="#10906F"/><stop offset="1" stop-color="#03483B"/>
+  </linearGradient>
+  <linearGradient id="mint" x1="0" y1="0" x2=".8" y2="1">
+    <stop stop-color="#E6FFF7"/><stop offset=".32" stop-color="#8BE4C7"/>
+    <stop offset="1" stop-color="#15906F"/>
+  </linearGradient>
+  <linearGradient id="deep" x1=".15" y1="0" x2=".85" y2="1">
+    <stop stop-color="#12876A"/><stop offset=".52" stop-color="#075343"/>
+    <stop offset="1" stop-color="#012E28"/>
+  </linearGradient>
+  <radialGradient id="fog">
+    <stop stop-color="#F3FFFB" stop-opacity=".75"/>
+    <stop offset=".35" stop-color="#C9F5E8" stop-opacity=".42"/>
+    <stop offset="1" stop-color="#8CE0C4" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+
+  <!-- exact letter silhouettes -->
+  <clipPath id="J"><path d="M45 25H190V207C190 269 155 299 101 299C56 299 26 278 12 243L68 207C74 228 85 239 101 239C120 239 129 226 129 202V25Z"/></clipPath>
+  <clipPath id="A"><path fill-rule="evenodd" d="M220 299L315 25H394L491 299H426L407 240H303L284 299ZM321 184H389L355 78Z"/></clipPath>
+  <clipPath id="D"><path fill-rule="evenodd" d="M515 25H635C730 25 785 75 785 161C785 248 730 299 635 299H515ZM577 83V241H630C690 241 721 213 721 161C721 110 690 83 630 83Z"/></clipPath>
+  <clipPath id="E"><path d="M810 25H1020V82H872V132H1000V188H872V242H1024V299H810Z"/></clipPath>
+
+  <linearGradient id="depthBlack" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#064C3D"/><stop offset=".5" stop-color="#013A30"/><stop offset="1" stop-color="#001E1A"/>
+  </linearGradient>
+  <linearGradient id="iceFace" x1="0" y1="0" x2=".8" y2="1">
+    <stop stop-color="#F5FFFC"/><stop offset=".28" stop-color="#B9F4E1"/><stop offset=".7" stop-color="#50CDA8"/><stop offset="1" stop-color="#0D8165"/>
+  </linearGradient>
+  <radialGradient id="innerMist" cx=".46" cy=".42" r=".6">
+    <stop stop-color="#DFFFF5" stop-opacity=".58"/><stop offset=".42" stop-color="#6DD6B6" stop-opacity=".16"/><stop offset="1" stop-color="#075744" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="mistBlur"><feGaussianBlur stdDeviation="7"/></filter>
+  <filter id="edgeGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="1.7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+</defs>
+
+<!-- Base letters -->
+<g fill="url(#jade)">
+ <path d="M45 25H190V207C190 269 155 299 101 299C56 299 26 278 12 243L68 207C74 228 85 239 101 239C120 239 129 226 129 202V25Z"/>
+ <path fill-rule="evenodd" d="M220 299L315 25H394L491 299H426L407 240H303L284 299ZM321 184H389L355 78Z"/>
+ <path fill-rule="evenodd" d="M515 25H635C730 25 785 75 785 161C785 248 730 299 635 299H515ZM577 83V241H630C690 241 721 213 721 161C721 110 690 83 630 83Z"/>
+ <path d="M810 25H1020V82H872V132H1000V188H872V242H1024V299H810Z"/>
+</g>
+
+<!-- J facets -->
+<g clip-path="url(#J)">
+ <path d="M0 20L118 20L62 147Z" fill="url(#mint)"/>
+ <path d="M118 20L205 20L151 146L62 147Z" fill="#35BD96"/>
+ <path d="M62 147L151 146L130 233L57 214Z" fill="url(#deep)"/>
+ <path d="M57 214L130 233L107 320L0 254Z" fill="#77DCC0"/>
+ <path d="M130 233L205 175L178 320L107 320Z" fill="#08705A"/>
+ <ellipse cx="80" cy="82" rx="95" ry="65" fill="url(#fog)" filter="url(#blur)"/>
+</g>
+
+<!-- A facets -->
+<g clip-path="url(#A)">
+ <path d="M210 310L315 20L351 89L283 213Z" fill="#08705A"/>
+ <path d="M315 20L394 20L351 89Z" fill="url(#mint)"/>
+ <path d="M394 20L501 310L405 202L351 89Z" fill="#58CEAA"/>
+ <path d="M283 213L351 89L405 202L350 246Z" fill="#0B8064"/>
+ <path d="M210 310L283 213L350 246L294 310Z" fill="#35BC97"/>
+ <path d="M350 246L405 202L501 310L405 310Z" fill="url(#deep)"/>
+ <ellipse cx="354" cy="71" rx="92" ry="55" fill="url(#fog)" filter="url(#blur)"/>
+</g>
+
+<!-- D facets -->
+<g clip-path="url(#D)">
+ <path d="M505 15L632 15L575 145Z" fill="url(#mint)"/>
+ <path d="M632 15L798 70L696 115L575 145Z" fill="#6ED8B7"/>
+ <path d="M575 145L696 115L780 188L654 201Z" fill="#21AA84"/>
+ <path d="M505 15L575 145L575 310L505 310Z" fill="#4DC9A5"/>
+ <path d="M575 145L654 201L575 310Z" fill="#0A715A"/>
+ <path d="M654 201L780 188L735 278L575 310Z" fill="url(#deep)"/>
+ <ellipse cx="641" cy="67" rx="125" ry="64" fill="url(#fog)" filter="url(#blur)"/>
+</g>
+
+<!-- E facets -->
+<g clip-path="url(#E)">
+ <path d="M800 15L926 15L865 116Z" fill="url(#mint)"/>
+ <path d="M926 15L1040 15L981 82L865 116Z" fill="#18AA83"/>
+ <path d="M800 15L865 116L865 210L800 310Z" fill="#45C5A0"/>
+ <path d="M865 116L1040 105L954 177L865 210Z" fill="#0B7D62"/>
+ <path d="M865 210L954 177L1040 310L865 310Z" fill="url(#deep)"/>
+ <path d="M800 310L865 210L865 310Z" fill="#7ADDBF"/>
+ <ellipse cx="876" cy="64" rx="100" ry="58" fill="url(#fog)" filter="url(#blur)"/>
+</g>
+
+<!-- sharp crystalline seams -->
+<g fill="none" stroke="#DFFFF5" stroke-width="1.2" opacity=".38">
+ <path d="M62 147L151 146L130 233"/>
+ <path d="M315 25L351 89L405 202"/>
+ <path d="M575 145L696 115L780 188"/>
+ <path d="M865 116L954 177L865 210"/>
+</g>
+
+<!-- top-left glass catches -->
+<g fill="none" stroke="#F0FFF9" stroke-width="2" opacity=".52">
+ <path d="M47 27H116"/><path d="M317 27H390"/>
+ <path d="M518 27H631"/><path d="M813 27H922"/>
+</g>
+
+<!-- additional gemstone depth: all vector -->
+<g pointer-events="none">
+  <!-- J micro-facets -->
+  <g clip-path="url(#J)">
+    <path d="M45 25L118 25L76 94Z" fill="url(#iceFace)" opacity=".68"/>
+    <path d="M76 94L129 25L129 170Z" fill="#55D0AC" opacity=".32"/>
+    <path d="M45 121L129 170L45 207Z" fill="#023A30" opacity=".30"/>
+    <path d="M68 207L130 233L101 299L52 267Z" fill="#D8FFF3" opacity=".28"/>
+    <ellipse cx="94" cy="132" rx="72" ry="105" fill="url(#innerMist)" filter="url(#mistBlur)" opacity=".62"/>
+  </g>
+  <!-- A micro-facets -->
+  <g clip-path="url(#A)">
+    <path d="M315 25L355 78L284 181Z" fill="#023A30" opacity=".55"/>
+    <path d="M355 78L394 25L422 121Z" fill="url(#iceFace)" opacity=".64"/>
+    <path d="M284 181L355 78L350 184Z" fill="#8CE4C8" opacity=".30"/>
+    <path d="M303 240L350 184L407 240L350 274Z" fill="#002B25" opacity=".42"/>
+    <path d="M350 274L426 240L491 299L405 299Z" fill="url(#depthBlack)" opacity=".54"/>
+    <ellipse cx="350" cy="130" rx="94" ry="92" fill="url(#innerMist)" filter="url(#mistBlur)" opacity=".66"/>
+  </g>
+  <!-- D micro-facets -->
+  <g clip-path="url(#D)">
+    <path d="M515 25L635 25L577 103Z" fill="url(#iceFace)" opacity=".72"/>
+    <path d="M635 25L744 69L677 118Z" fill="#9DEBD3" opacity=".30"/>
+    <path d="M577 103L677 118L577 181Z" fill="#03483A" opacity=".42"/>
+    <path d="M677 118L785 161L699 193Z" fill="#008066" opacity=".38"/>
+    <path d="M699 193L768 238L635 299L577 241Z" fill="url(#depthBlack)" opacity=".48"/>
+    <path d="M515 181L577 241L515 299Z" fill="#C7F8EA" opacity=".30"/>
+    <ellipse cx="650" cy="102" rx="122" ry="78" fill="url(#innerMist)" filter="url(#mistBlur)" opacity=".62"/>
+  </g>
+  <!-- E micro-facets -->
+  <g clip-path="url(#E)">
+    <path d="M810 25L920 25L872 92Z" fill="url(#iceFace)" opacity=".72"/>
+    <path d="M920 25L1020 25L956 82Z" fill="#00634F" opacity=".48"/>
+    <path d="M810 92L872 132L810 188Z" fill="#023A30" opacity=".40"/>
+    <path d="M872 132L1000 132L936 188Z" fill="#46C5A2" opacity=".35"/>
+    <path d="M810 188L872 242L810 299Z" fill="#0D8065" opacity=".34"/>
+    <path d="M872 242L1024 299L872 299Z" fill="url(#depthBlack)" opacity=".58"/>
+    <ellipse cx="886" cy="111" rx="94" ry="90" fill="url(#innerMist)" filter="url(#mistBlur)" opacity=".56"/>
+  </g>
+
+  <!-- luminous bevel catches -->
+  <g fill="none" stroke="#F1FFF9" stroke-linecap="round" filter="url(#edgeGlow)">
+    <path d="M46 27H127" stroke-width="2.2" opacity=".58"/>
+    <path d="M316 27L394 27" stroke-width="2.3" opacity=".70"/>
+    <path d="M517 27H634" stroke-width="2.2" opacity=".64"/>
+    <path d="M812 27H920" stroke-width="2.2" opacity=".65"/>
+    <path d="M68 207C75 231 87 240 102 240" stroke-width="1.8" opacity=".55"/>
+    <path d="M303 240H407" stroke-width="1.5" opacity=".42"/>
+    <path d="M577 83V241" stroke-width="1.5" opacity=".36"/>
+    <path d="M872 132H999" stroke-width="1.5" opacity=".36"/>
+  </g>
+</g>
+
+</svg>

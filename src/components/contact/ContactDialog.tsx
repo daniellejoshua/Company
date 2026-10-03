@@ -110,14 +110,14 @@ function BrandLockup({ compact = false }: { compact?: boolean }) {
       <span
         className={`${
           compact ? "text-base" : "text-lg"
-        } font-michroma leading-none tracking-[-0.02em] text-jade-off-white`}
+        } font-montserrat font-bold leading-none tracking-[0.055em] text-jade-off-white`}
       >
         PRAXIS
       </span>
       <span
         className={`${
           compact ? "text-base" : "text-lg"
-        } font-michroma leading-none tracking-[-0.02em] text-jade-soft`}
+        } font-montserrat font-bold leading-none tracking-[0.055em] text-jade-soft`}
       >
         JADE
       </span>

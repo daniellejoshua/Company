@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="JADE 02_mlm_platforms origami service icon"><defs>
-<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#52cba2"/><stop offset=".55" stop-color="#008358"/><stop offset="1" stop-color="#00523f"/></linearGradient>
-<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00875c"/><stop offset="1" stop-color="#003f36"/></linearGradient>
-<linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1fffa"/><stop offset="1" stop-color="#bceee0"/></linearGradient>
-<linearGradient id="soft" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b9f1de"/><stop offset="1" stop-color="#39ba90"/></linearGradient>
-<linearGradient id="facet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#009365"/><stop offset="1" stop-color="#00b078"/></linearGradient>
-<linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#d5faed"/></linearGradient>
-</defs><g stroke-linejoin="round"><path d="M32 68 Q32 52 47 47 L136 13 Q158 9 165 28 L171 119 133 149 80 143 43 105Z" fill="url(#mint)" /><polygon points="30,104 95,39 95,172" fill="url(#g)" /><polygon points="30,104 95,39 145,66" fill="url(#facet)" /><polygon points="95,39 95,104 30,104" fill="url(#dark)" /><polygon points="95,39 153,76 171,125" fill="url(#g)" /><polygon points="95,39 171,125 95,104" fill="url(#dark)" /><polygon points="95,104 171,125 137,141 112,132 95,139" fill="url(#facet)" /><polygon points="30,104 95,104 61,119" fill="url(#soft)" /><polygon points="61,119 95,172 95,104" fill="url(#mint)" /><polygon points="95,104 112,132 95,139" fill="url(#soft)" /></g></svg>

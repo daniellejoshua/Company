@@ -5,10 +5,11 @@ import Link from "next/link";
 import { services } from "@/data/services";
 
 const companyLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "Our Process", href: "#solutions" },
-  { label: "Our Work", href: "#work" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Our Process", href: "/#solutions" },
+  { label: "Our Work", href: "/#work" },
 ];
 
 const linkClassName =
@@ -20,20 +21,45 @@ export function Footer() {
       id="contact"
       className="relative scroll-mt-[72px] overflow-hidden bg-jade-black text-jade-off-white"
     >
-      <Image
-        src="/assets/hero/hero-shape.svg"
-        alt=""
-        width={620}
-        height={620}
+      <div
+        className="pointer-events-none absolute inset-y-0 right-0 w-[78%] overflow-hidden sm:w-[58%] lg:w-[46%]"
         aria-hidden="true"
-        className="pointer-events-none absolute -right-32 -bottom-48 w-[clamp(340px,42vw,620px)] opacity-[0.07]"
-      />
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_88%_78%,rgba(24,167,123,0.12),rgba(7,81,63,0.06)_34%,transparent_68%)]" />
+
+        <Image
+          src="/assets/PRAXISJADE(GREEN) ASSETS/praxis-jade-band-right.svg"
+          alt=""
+          width={1254}
+          height={1254}
+          sizes="(max-width: 767px) 430px, 620px"
+          className="absolute right-[-24%] bottom-[-12%] h-auto w-[145%] max-w-none opacity-25 [mask-image:linear-gradient(to_right,transparent_0%,rgba(0,0,0,0.28)_10%,#000_32%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,rgba(0,0,0,0.28)_10%,#000_32%)] sm:right-[-16%] sm:bottom-[-68%] sm:w-[132%]"
+        />
+
+        <Image
+          src="/assets/PRAXISJADE(GREEN) ASSETS/praxis-jade-band-right.svg"
+          alt=""
+          width={1254}
+          height={1254}
+          sizes="(max-width: 767px) 480px, 680px"
+          className="absolute right-[-38%] bottom-[-18%] h-auto w-[158%] max-w-none opacity-30 [mask-image:linear-gradient(to_right,transparent_0%,rgba(0,0,0,0.2)_18%,#000_55%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,rgba(0,0,0,0.2)_18%,#000_55%)] sm:right-[-30%] sm:bottom-[-78%] sm:w-[146%]"
+        />
+
+        <Image
+          src="/assets/PRAXISJADE(GREEN) ASSETS/praxis-jade-band-right.svg"
+          alt=""
+          width={1254}
+          height={1254}
+          sizes="(max-width: 767px) 520px, 760px"
+          className="absolute right-[-55%] bottom-[-28%] h-auto w-[176%] max-w-none opacity-40 [mask-image:linear-gradient(to_right,transparent_0%,transparent_22%,#000_60%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,transparent_22%,#000_60%)] sm:right-[-48%] sm:bottom-[-94%] sm:w-[168%]"
+        />
+      </div>
 
       <div className="relative mx-auto max-w-7xl px-5 py-10 sm:px-8 sm:py-12">
         <div className="grid grid-cols-[minmax(0,0.76fr)_minmax(0,1.24fr)] gap-x-6 gap-y-8 md:grid-cols-3 lg:grid-cols-[minmax(0,1.35fr)_minmax(180px,0.7fr)_minmax(160px,0.6fr)_minmax(250px,0.9fr)] lg:gap-x-10">
           <div className="col-span-2 max-w-md md:col-span-3 lg:col-span-1">
             <Link
-              href="#home"
+               href="/"
               aria-label="PRAXIS JADE home"
               className="inline-flex items-center gap-2 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-jade-soft"
             >
@@ -44,10 +70,10 @@ export function Footer() {
                 height={48}
                 className="size-11 object-contain"
               />
-              <span className="text-[28px] font-michroma tracking-[-0.02em] leading-none">
+              <span className="text-[28px] font-montserrat font-bold tracking-[0.055em] leading-none">
                 PRAXIS
               </span>
-              <span className="text-[28px] font-michroma tracking-[-0.02em] text-jade-soft leading-none ml-1">
+              <span className="text-[28px] font-montserrat font-bold tracking-[0.055em] text-jade-soft leading-none ml-1">
                 JADE
               </span>
             </Link>
@@ -74,7 +100,7 @@ export function Footer() {
             <ul className="mt-3 grid grid-cols-2 gap-x-6 md:block" role="list">
               {services.map((service) => (
                 <li key={service.name}>
-                  <Link href="#services" className={linkClassName}>
+                   <Link href="/#services" className={linkClassName}>
                     <span className="transition-transform duration-200 group-hover:translate-x-1">
                       {service.name}
                     </span>

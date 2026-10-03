@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Caveat, Michroma, Plus_Jakarta_Sans, Poppins } from "next/font/google";
+import { Caveat, Montserrat, Plus_Jakarta_Sans, Poppins } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
@@ -19,10 +19,10 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const michroma = Michroma({
-  variable: "--font-michroma",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: "400",
+  weight: "700",
 });
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${jakarta.variable} ${caveat.variable} ${poppins.variable} ${michroma.variable} h-full scroll-smooth antialiased`}
+      className={`${jakarta.variable} ${caveat.variable} ${poppins.variable} ${montserrat.variable} h-full scroll-smooth antialiased`}
     >
       <body className="flex min-h-full flex-col overflow-x-clip">
         <Script id="reset-scroll-on-refresh" strategy="beforeInteractive">
